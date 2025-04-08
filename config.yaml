@@ -1,0 +1,6 @@
+rest: true
+loadEnv: true
+graphqlSchema:
+  files: src/schema.graphql
+jsResource:
+  files: dist/resources/index.js

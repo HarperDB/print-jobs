@@ -1,0 +1,23 @@
+enum PrintJobStatus {
+	ready
+	fetched
+}
+
+enum PrinterType {
+	star
+	epson
+}
+
+scalar Any
+
+type PrintJob @table @sealed @export(name: "print-job") {
+	uniquePrinterIdJobToken: String! @primaryKey
+	uniquePrinterId: String!
+	jobToken: String!
+	status: PrintJobStatus!
+	printerType: PrinterType!
+	jobData: String
+	starPollResponse: Any
+	fetchedAt: Float
+	createdAt: Float @createdTime
+}

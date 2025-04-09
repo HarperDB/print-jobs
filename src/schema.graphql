@@ -10,7 +10,7 @@ enum PrinterType {
 
 scalar Any
 
-type PrintJob @table @sealed @export(name: "print-job") {
+type PrintJob @table(database: "PrintJobs") @sealed @export(name: "print-job") {
 	uniquePrinterIdJobToken: String! @primaryKey
 	uniquePrinterId: String!
 	jobToken: String!

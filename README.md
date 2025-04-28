@@ -4,6 +4,9 @@
 
 This is a Harper component is designed to ingest jobs from a central print server and distribute jobs to remote printers upon request via a REST interface. The component is designed specifically to match the API specs for STAR and Epson brand printers.
 
+### What is Harper
+Harper is a Composable Application Platform that merges database, cache, app logic, and messaging into a single runtime. Components like this plug directly into Harper, letting you build and scale distributed services fast, without managing separate systems. Built for geo-distributed apps with low latency and high uptime by default.
+
 ## Getting Started
 
 1. `git clone https://github.com/HarperDB/print-jobs.git`
